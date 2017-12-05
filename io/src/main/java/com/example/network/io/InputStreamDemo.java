@@ -6,7 +6,7 @@ import java.io.InputStream;
 
 import static com.example.network.io.Constants.FILE_PATH;
 
-public class InputStreamDemo {
+class InputStreamDemo {
 
     public static void main(String[] arg) {
         InputStreamDemo demo = new InputStreamDemo();

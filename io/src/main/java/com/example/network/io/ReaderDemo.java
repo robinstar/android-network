@@ -14,7 +14,7 @@ import static com.example.network.io.Constants.FILE_PATH;
  * Created by yueweiwei on 25/11/2017.
  */
 
-public class ReaderDemo {
+class ReaderDemo {
 
     public static void main(String[] args) {
         ReaderDemo demo = new ReaderDemo();

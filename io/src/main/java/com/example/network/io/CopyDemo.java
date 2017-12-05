@@ -1,4 +1,4 @@
-package com.example.io;
+package com.example.network.io;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import static com.example.io.Constants.FILE_COPY_PATH;
-import static com.example.io.Constants.FILE_PATH;
+import static com.example.network.io.Constants.FILE_COPY_PATH;
+import static com.example.network.io.Constants.FILE_PATH;
 
 /**
  * Created by yueweiwei on 25/11/2017.

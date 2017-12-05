@@ -1,10 +1,10 @@
-package com.example.io;
+package com.example.network.io;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static com.example.io.Constants.FILE_PATH;
+import static com.example.network.io.Constants.FILE_PATH;
 
 public class InputStreamDemo {
 

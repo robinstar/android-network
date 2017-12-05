@@ -1,4 +1,4 @@
-package com.example.io;
+package com.example.network.io;
 
 import java.io.FileInputStream;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringReader;
 
-import static com.example.io.Constants.FILE_PATH;
+import static com.example.network.io.Constants.FILE_PATH;
 
 /**
  * Created by yueweiwei on 25/11/2017.

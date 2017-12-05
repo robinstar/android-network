@@ -1,1 +1,1 @@
-include ':app', ':io', ':oom'
+include ':app', ':io', ':oom', ':leaked'

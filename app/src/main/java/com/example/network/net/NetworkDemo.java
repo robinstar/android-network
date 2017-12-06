@@ -1,4 +1,4 @@
-package com.example.network;
+package com.example.network.net;
 
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
@@ -12,16 +12,20 @@ import java.net.URLConnection;
 
 /**
  * Created by yueweiwei on 25/11/2017.
+ * <p>
+ * 使用JDK java.net包中的API实现网络请求
  */
 
-public class JavaNetPackageDemo {
+class NetworkDemo {
 
     private static final String URL = "https://www.baidu.com";
     private static final String SAVED_FILE = "app/index.html";
 
     public static void main(String[] args) {
-        JavaNetPackageDemo demo = new JavaNetPackageDemo();
+        new NetworkDemo().request();
+    }
 
+    private void request() {
         try {
             URL url = new URL(URL);
             URLConnection conn = url.openConnection();
@@ -29,16 +33,15 @@ public class JavaNetPackageDemo {
             InputStream is = conn.getInputStream();
             BufferedInputStream bis = new BufferedInputStream(is);
 
-            demo.printResponse(bis);
+            printResponse(bis);
             bis.mark(0);
             bis.reset();
-            demo.saveResponse(bis);
+            saveResponse(bis);
 
             bis.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     private void printResponse(InputStream is) throws IOException {

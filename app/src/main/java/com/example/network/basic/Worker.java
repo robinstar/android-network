@@ -140,6 +140,8 @@ class Worker implements Runnable {
         try {
             URL url = new URL(this.url);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setConnectTimeout(5 * 1000);
+            conn.setReadTimeout(5 * 1000);
 
             handler.sendEmptyMessage(START_CONNECTING);
             conn.connect();
